@@ -7,6 +7,7 @@ const AboutMainContainer = styled.div`
     display: grid;
     height: 100%;
     column-gap: 3rem;
+    row-gap: 1.5rem;
     grid-template-columns: 1fr max-content;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
@@ -15,6 +16,10 @@ const AboutMainContainer = styled.div`
     h2{
         margin-top: 0;
     }
+    h1{
+        margin: 0;
+        font-size: 1.8rem;
+    }
     .education{
         grid-area: education;
         display: grid;
@@ -22,23 +27,21 @@ const AboutMainContainer = styled.div`
         grid-template-columns: 1fr 1fr;
         column-gap: 3rem;
         row-gap: 2rem;
-        >h2{
+        >h1{
             grid-column: 1/3;
-            margin: 0 auto .5rem auto;
+            /* margin: 0 auto .5rem auto; */
         }
         >div{
             display: grid;
             grid-row: 2/3;
             grid-template-rows: repeat(5, max-content) 1fr;
-            h2{
-                font-size: 1.3rem;
-                margin: 0
-            }
             h3{
-                margin: auto 0 auto auto;
+                /* margin: auto 0 auto auto; */
+                margin: 0 auto .2rem 2rem;
             }
             h4{
                 margin: 0;
+                margin: 0 auto 0 2rem;
             }
         }
     }
@@ -56,7 +59,7 @@ const AboutMainContainer = styled.div`
 
     @media screen and (max-width : 768px){
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
         grid-template-areas:
         "education" 
         "highlights" 
@@ -68,7 +71,7 @@ const AboutMainContainer = styled.div`
         .education{
             grid-template-columns: 1fr;
             grid-template-rows: max-content 1fr 1fr;
-            >h2{
+            >h1{
                 grid-column: 1/2;
             }
             >div{
@@ -83,30 +86,31 @@ function About() {
         <Main>
             <AboutMainContainer>
                 <div className="education">
-                    <h2>Degrees {'&'} Certifications</h2>
+                    {/* make like others */}
+                    <h1>Degrees {'&'} Certifications</h1>
                     <div className="osu">
                         <h2 className="major">B.S. Computer Science</h2>
-                        <h3 className="school">Oregon State University</h3>
-                        <h3 className="date">March 2020</h3>
+                        <h3 className="school">Oregon State University - March 2020</h3>
+                        {/* <h3 className="date"></h3> */}
                         <h4 className="focus">Focus in Human Computer Interaction</h4>
-                        <div className="transcript">transcript?</div>
+                        <h4 className="transcript">transcript?</h4>
                     </div>
                     <div className="unige">
                         <h2 className="major">B2 French Certification</h2>
-                        <h3 className="school">University de Geneve</h3>
-                        <h3 className="date">2014</h3>
+                        <h3 className="school">University de Geneve - 2014</h3>
+                        {/* <h3 className="date"></h3> */}
                     </div>
                 </div>
                 <div className="highlights">
-                    <h2>Highlights:</h2>
+                    <h2>Highlights</h2>
                     <ul>
-                        <li>Able to communicate technical knowledge to other disciplines</li>
+                        <li>Able to communicate technical information to other disciplines</li>
                         <li>Bilingual (English/French)</li>
-                        <li>Comfortable public speaker</li>
+                        <li>Comfortable with public speaking</li>
                     </ul>
                 </div>
                 <div className="languages">
-                    <h2>Languages I've worked with:</h2>
+                    <h2>Languages I've worked with</h2>
                     <ul >
                         <li>Javascript (ES6)</li>
                         <li>CSS (SASS/LESS)</li>
@@ -117,7 +121,7 @@ function About() {
                     </ul>
                 </div>
                 <div className="software">
-                    <h2>Software I've worked with:</h2>
+                    <h2>Software I've worked with</h2>
                     <ul >
                         <li>Adobe CC (Illustrator, XD, Photoshop)</li>
                         <li>Balsamiq</li>

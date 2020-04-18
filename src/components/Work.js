@@ -20,10 +20,10 @@ const WorkMainContainer = styled.div`
 `;
 
 const items = [
-    {title:'Teachers Assistant', company:'Oregon State University', date:'Sept 2016 - Mar 2020', 
+    {title:"Teacher's Assistant", company:'Oregon State University', date:'Sept 2016 - Mar 2020', 
     items:[
-        'Taught classes of 15 students strengthening my presentation skills and ability to communicate technical topics',
-        'Mentored newer TAs as a senior TA',
+        'Taught classes of 15 students, which strengthened my presentation skills',
+        'As a senior TA, mentored newer TAs',
         'Gave course feedback to new instructors']},
     {title:'BIOS Firmware Intern', company:'Intel', date:'June 2019 - Dec 2019', 
     items:[
@@ -42,7 +42,7 @@ const items = [
     {title:'Line Cook', company:"Pietro's Pizza", date:'June 2016 - Sept 2016', 
     items:[
         'Taught new employees',
-        'Maintained composure during rushed environments']},
+        'Maintained composure during rush hours']},
     {title:'Level 2 Judge', company:'Magic: The Gathering', date:'2014 - 2018', 
     items:[
         'While in high school, traveled to major tournaments across the country as an independent contractor',

@@ -2,8 +2,9 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 const MainMainContainer = styled.main`
-    margin-top: 3rem;
-    height: 90%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    /* height: 90%; */
     display: grid;
     grid-template-columns: 1fr 80vw 1fr;
     @media screen and (max-width : 768px){

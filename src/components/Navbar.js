@@ -8,6 +8,7 @@ import Linkedinlogo from '../assets/LI-In-Bug.png'
 
 const Nav = styled.nav`
     display: grid;
+    padding-bottom: 1rem;
     grid-template-columns: 6fr 4fr;
     grid-template-rows: 4rem 1fr;
     grid-template-areas:

@@ -27,7 +27,9 @@ const Item = styled.div`
         margin: 0;
     }
     > img{
+        box-shadow: 1px 1px 8px var(--color-dark-gray);
         grid-area: thumbnail;
+        border-radius: 2px;
         height: auto;
         width: 100%;
         margin: auto;
@@ -37,9 +39,6 @@ const Item = styled.div`
     }
     > button{
         grid-area: toggle;
-        &:hover{
-            color: var(--color-link-hover)
-        }
     }
     > a{
         grid-area: url;
@@ -55,6 +54,7 @@ const Item = styled.div`
         height: 100%;
         &:hover{
             cursor: pointer;
+            color: var(--color-link-hover)
         }
     }
     .description{
@@ -74,7 +74,9 @@ const Item = styled.div`
             z-index: -1;
             img{
                 /* height: auto; */
+                border-radius: 2px;
                 width: 100%;
+                box-shadow: 1px 1px 8px var(--color-dark-gray);
             }
         }
         button:nth-of-type(1){

@@ -62,13 +62,19 @@ const globalStyles = css`
       font-weight: 200;
     }
     h2{
-      font-weight: 200;
+      font-weight: 600;
+      font-size: 1.2rem;
     }
     h3{
       font-weight: 200;
     }
     h4{
       font-weight: 200;
+    }
+    button{
+      &:focus{
+        outline: none;
+      }
     }
   }
 `;

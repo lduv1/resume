@@ -4,15 +4,18 @@ import styled from '@emotion/styled';
 const Item = styled.div`
     margin: auto;
     display: grid;
-    h2{
+    h3{
+        font-weight: 600;
+    }
+    .title{
         margin: 0;
     }
-    h3{
+    .company{
         display: block;
-        margin: .4rem 0 .4rem auto;
+        margin: .4rem 0 .1rem auto;
     }
     .date{
-        margin: 0 0 .4rem auto;
+        margin: 0 0 .8rem auto;
     }
     ul{
         /* list-style: none; */
@@ -26,8 +29,8 @@ const Item = styled.div`
 function WorkItem(props) {
     return (
         <Item>
-            <h2>{props.title}</h2>
-            <h3>{props.company}</h3>
+            <h3 className="title">{props.title}</h3>
+            <h3 className="company">{props.company}</h3>
             <div className="date">{props.date}</div>
             {props.items && <ul>
                 {props.items.map(item => 
