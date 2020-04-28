@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import Main from './Main';
+import transcript from '../assets/Transcript.png'
 
 const AboutMainContainer = styled.div`
     margin: auto;
@@ -24,11 +25,11 @@ const AboutMainContainer = styled.div`
         grid-area: education;
         display: grid;
         grid-template-rows: max-content 1fr;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         column-gap: 3rem;
         row-gap: 2rem;
         >h1{
-            grid-column: 1/3;
+            grid-column: 1/2;
             /* margin: 0 auto .5rem auto; */
         }
         >div{
@@ -37,11 +38,11 @@ const AboutMainContainer = styled.div`
             grid-template-rows: repeat(5, max-content) 1fr;
             h3{
                 /* margin: auto 0 auto auto; */
-                margin: 0 auto .2rem 2rem;
+                margin: 0 auto .2rem 2.5rem;
             }
             h4{
                 margin: 0;
-                margin: 0 auto 0 2rem;
+                margin: 0 auto 0 2.5rem;
             }
         }
     }
@@ -67,7 +68,7 @@ const AboutMainContainer = styled.div`
         "software";
         
     }
-    @media screen and (max-width : 1200px){
+    /* @media screen and (max-width : 1200px){
         .education{
             grid-template-columns: 1fr;
             grid-template-rows: max-content 1fr 1fr;
@@ -77,8 +78,8 @@ const AboutMainContainer = styled.div`
             >div{
                 grid-row: auto;
             }
-        }
-    }
+        } 
+    }*/
 `;
 
 function About() {
@@ -87,18 +88,12 @@ function About() {
             <AboutMainContainer>
                 <div className="education">
                     {/* make like others */}
-                    <h1>Degrees {'&'} Certifications</h1>
+                    <h1>B.S. Computer Science</h1>
                     <div className="osu">
-                        <h2 className="major">B.S. Computer Science</h2>
                         <h3 className="school">Oregon State University - March 2020</h3>
                         {/* <h3 className="date"></h3> */}
                         <h4 className="focus">Focus in Human Computer Interaction</h4>
-                        <h4 className="transcript">transcript?</h4>
-                    </div>
-                    <div className="unige">
-                        <h2 className="major">B2 French Certification</h2>
-                        <h3 className="school">University de Geneve - 2014</h3>
-                        {/* <h3 className="date"></h3> */}
+                        <h4 className="transcript"><a target="_blank" rel="noopener noreferrer" href={transcript}>Transcript</a></h4>
                     </div>
                 </div>
                 <div className="highlights">
