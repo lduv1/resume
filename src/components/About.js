@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import Main from './Main';
-import transcript from '../assets/Transcript.png'
+import transcript from '../assets/Transcript.pdf'
 
 const AboutMainContainer = styled.div`
     margin: auto;

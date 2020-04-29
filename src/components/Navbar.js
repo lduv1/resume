@@ -10,7 +10,7 @@ const Nav = styled.nav`
     display: grid;
     padding-bottom: 1rem;
     grid-template-columns: 6fr 4fr;
-    grid-template-rows: 4rem 1fr;
+    grid-template-rows: max-content 1fr;
     grid-template-areas:
     "name socials"
     "links links";
@@ -57,9 +57,6 @@ const Nav = styled.nav`
         grid-template-columns: 8fr 4fr;
         > a{
             margin: auto auto auto 2rem;
-            h1{
-            
-            }
         }
         .links{
             a{
