@@ -34,8 +34,8 @@ const globalStyles = css`
   ::-webkit-scrollbar-button {display:none}
 
   body {
-    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-    font-family: 'Roboto', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+    font-family: 'Titillium Web', sans-serif;
 
     margin: 0;
     overflow: hidden;

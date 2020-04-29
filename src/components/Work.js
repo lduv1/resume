@@ -46,7 +46,7 @@ const items = [
     {title:'Level 2 Judge', company:'Magic: The Gathering', date:'2014 - 2018', 
     items:[
         'While in high school, traveled to major tournaments across the country as an independent contractor',
-        'Maintain professional demeanor while mediating conflict between competitors']}
+        'Maintained professional demeanor while mediating conflict between competitors']}
 ]
 
 function Work() {

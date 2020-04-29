@@ -90,8 +90,8 @@ function About() {
                     {/* make like others */}
                     <h1>B.S. Computer Science</h1>
                     <div className="osu">
-                        <h3 className="school">Oregon State University - March 2020</h3>
-                        {/* <h3 className="date"></h3> */}
+                        <h3 className="school">Oregon State University, Magna Cum Laude</h3>
+                        <h3 className="date">March 2020</h3>
                         <h4 className="focus">Focus in Human Computer Interaction</h4>
                         <h4 className="transcript"><a target="_blank" rel="noopener noreferrer" href={transcript}>Transcript</a></h4>
                     </div>
