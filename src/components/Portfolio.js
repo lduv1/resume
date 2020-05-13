@@ -7,6 +7,8 @@ import DiscChat from '../assets/disc-chat.png'
 import DiscPlaylists from '../assets/disc-playlists.png'
 import DiscServers from '../assets/disc-servers.png'
 import DiscSongs from '../assets/disc-songs.png'
+import Controller from '../assets/Controller.png'
+import ControllerLong from '../assets/Controller-long.png'
 
 
 const PortfolioMainContainer = styled.div`
@@ -45,38 +47,28 @@ const items = [
         ]
     },
     {
-        title:'Lisa Caballero Art', 
-        link:'https://google.com', 
-        thumbnail:'http://placekitten.com/200/200', 
-        description: 'A gallery style webpage',
-        tag: 'lisacab',
-        images:[
-            {url: 'http://placekitten.com/300/300', description:'cat1'},
-            {url: 'http://placekitten.com/300/300', description:'cat2'}
-        ]
-    },
-    {
-        title:'Cats!!', 
-        link:'https://placekitten.com', 
-        thumbnail:'http://placekitten.com/220/210', 
-        description: "I didn't actually make this",
+        title:'DJ Controller Layout', 
+        link:'https://github.com/lduv1/djcontrollerlayout', 
+        thumbnail: Controller, 
+        description: "A demo layout of a DJ controller",
         tag: 'cats',
         images:[
-            {url: 'http://placekitten.com/302/300', description:'cat1'},
-            {url: 'http://placekitten.com/303/300', description:'cat2'}
-        ]
-    },
-    {
-        title:'Cats!!', 
-        link:'https://placekitten.com', 
-        thumbnail:'http://placekitten.com/220/211', 
-        description: "I didn't actually make this",
-        tag: 'cats',
-        images:[
-            {url: 'http://placekitten.com/302/300', description:'cat1'},
-            {url: 'http://placekitten.com/303/300', description:'cat2'}
+            {url: Controller, description:'"Normal" view'},
+            {url: ControllerLong, description:'Streched out view'}
         ]
     }
+    // ,
+    // {
+    //     title:'Lisa Caballero Art', 
+    //     link:'https://google.com', 
+    //     thumbnail:'http://placekitten.com/200/200', 
+    //     description: 'A gallery style webpage',
+    //     tag: 'lisacab',
+    //     images:[
+    //         {url: 'http://placekitten.com/300/300', description:'cat1'},
+    //         {url: 'http://placekitten.com/300/300', description:'cat2'}
+    //     ]
+    // }
 ]
 
 function Portfolio() {
