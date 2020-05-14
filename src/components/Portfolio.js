@@ -48,7 +48,7 @@ const items = [
     },
     {
         title:'DJ Controller Layout', 
-        link:'https://github.com/lduv1/djcontrollerlayout', 
+        link:'https://dj-controller-layout.herokuapp.com/', 
         thumbnail: Controller, 
         description: "A demo layout of a DJ controller",
         tag: 'cats',
