@@ -48,14 +48,12 @@ const AboutMainContainer = styled.div`
     }
     .highlights{
         grid-area: highlights;
-        margin: auto 0;
     }
     .languages{
         grid-area: languages;
     }
     .software{
         grid-area: software;
-        margin: auto 0;
     }
 
     @media screen and (max-width : 768px){
@@ -88,7 +86,7 @@ function About() {
             <AboutMainContainer>
                 <div className="education">
                     {/* make like others */}
-                    <h1>B.S. Computer Science</h1>
+                    <h2>B.S. Computer Science</h2>
                     <div className="osu">
                         <h3 className="school">Oregon State University, Magna Cum Laude</h3>
                         <h3 className="date">March 2020</h3>
