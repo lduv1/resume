@@ -8,7 +8,7 @@ const AboutMainContainer = styled.div`
     display: grid;
     height: 100%;
     column-gap: 3rem;
-    row-gap: 1.5rem;
+    row-gap: 3rem;
     grid-template-columns: 1fr max-content;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
@@ -100,6 +100,7 @@ function About() {
                         <li>Able to communicate technical information to other disciplines</li>
                         <li>Bilingual (English/French)</li>
                         <li>Comfortable with public speaking</li>
+                        <li>Teaching experience</li>
                     </ul>
                 </div>
                 <div className="languages">
