@@ -20,6 +20,16 @@ const WorkMainContainer = styled.div`
 `;
 
 const items = [
+    {title:"Independent contractor", company:'Oregon Health and Science University', date:'Jul 2020 - Present', 
+    items:[
+        'Parsed data from electroretinogram machine output to CSV',
+        'Filtered and modeled data',
+        'Graphed analyzed output']},
+    {title:"UX Designer", company:'WaTutor', date:'Jun 2020 - Oct 2020', 
+    items:[
+        'Designed login and account creation flow',
+        'Designed UI for video call system',
+        'Refined ideas with project lead to realize abstract requirements']},
     {title:"Teacher's Assistant", company:'Oregon State University', date:'Sept 2016 - Mar 2020', 
     items:[
         'Taught classes of 15 students, which strengthened my presentation skills',
