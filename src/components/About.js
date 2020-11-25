@@ -10,10 +10,11 @@ const AboutMainContainer = styled.div`
     column-gap: 3rem;
     row-gap: 3rem;
     grid-template-columns: 1fr max-content;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto;
     grid-template-areas:
     "education languages"
-    "highlights software";
+    "highlights software"
+    "references .";
     h2{
         margin-top: 0;
     }
@@ -55,6 +56,9 @@ const AboutMainContainer = styled.div`
     .software{
         grid-area: software;
     }
+    .references{
+        grid-area: references;
+    }
 
     @media screen and (max-width : 768px){
         grid-template-columns: 1fr;
@@ -63,7 +67,8 @@ const AboutMainContainer = styled.div`
         "education" 
         "highlights" 
         "languages"
-        "software";
+        "software"
+        "references";
         
     }
     /* @media screen and (max-width : 1200px){
@@ -91,7 +96,7 @@ function About() {
                         <h3 className="school">Oregon State University, Magna Cum Laude</h3>
                         <h3 className="date">March 2020</h3>
                         <h4 className="focus">Focus in Human Computer Interaction</h4>
-                        <h4 className="transcript"><a target="_blank" rel="noopener noreferrer" href={transcript}>Transcript</a></h4>
+                        <h4 className="transcript"><a target="_blank" rel="noopener noreferrer" href={transcript}>Unofficial Transcript</a></h4>
                     </div>
                 </div>
                 <div className="highlights">
@@ -122,6 +127,9 @@ function About() {
                         <li>InVision</li>
                         <li>Simics</li>
                     </ul>
+                </div>
+                <div className="references">
+                    <h2>References available upon request</h2>
                 </div>
             </AboutMainContainer>
         </Main>

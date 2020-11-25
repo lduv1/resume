@@ -29,6 +29,9 @@ const PortfolioMainContainer = styled.div`
             transition: 1s;
         }
     }
+    > h2{
+
+    }
 `;
 
 
@@ -78,6 +81,7 @@ function Portfolio() {
                 <ul>
                     {items.map(item => <li key={item.tag}><PortfolioItem {...item}/></li>)}
                 </ul>
+                <h2>My other work is proprietary to my employers</h2>
             </PortfolioMainContainer>
         </Main>
     );
