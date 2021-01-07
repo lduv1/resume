@@ -9,6 +9,11 @@ import DiscServers from '../assets/disc-servers.png'
 import DiscSongs from '../assets/disc-songs.png'
 import Controller from '../assets/Controller.png'
 import ControllerLong from '../assets/Controller-long.png'
+import Show from '../assets/show.jpg'
+import Home from '../assets/home.jpg'
+import HomeMobile from '../assets/homemobile.jpg'
+import Gallery from '../assets/gallery.jpg'
+import GalleryMobile from '../assets/gallerymobile.jpg'
 
 
 const PortfolioMainContainer = styled.div`
@@ -37,8 +42,24 @@ const PortfolioMainContainer = styled.div`
 
 const items = [
     {
+        title:'Lisa Caballero Art', 
+        link:'https://www.lisacaballeroart.com', 
+        linktext:'lisacaballeroart.com', 
+        thumbnail: Home, 
+        description: 'A contracted web-gallery for an artist',
+        tag: 'lisacab',
+        images:[
+            {url: Home, description:'Home'},
+            {url: Gallery, description:'Paintings from 2012-2013'},
+            {url: Show, description:'A writeup for a gallery show'},
+            {url: HomeMobile, description:'Home (mobile)'},
+            {url: GalleryMobile, description:'Paintings from 2012-2013 (mobile)'}
+        ]
+    },
+    {
         title:'Discord Bot Web Interface', 
         link:'https://github.com/osu-cs419-w20/final-project-discord-site', 
+        linktext:'github.com', 
         thumbnail: DiscServers, 
         description: 'A web interface for me to play my spotify music through my discord bot',
         tag: 'disc',
@@ -52,26 +73,16 @@ const items = [
     {
         title:'DJ Controller Layout', 
         link:'https://dj-controller-layout.herokuapp.com/', 
+        linktext:'herokuapp.com', 
         thumbnail: Controller, 
-        description: "A demo layout of a DJ controller",
+        description: "An interactive layout of a DJ controller",
         tag: 'cats',
         images:[
             {url: Controller, description:'"Normal" view'},
             {url: ControllerLong, description:'Streched out view'}
         ]
     }
-    // ,
-    // {
-    //     title:'Lisa Caballero Art', 
-    //     link:'https://google.com', 
-    //     thumbnail:'http://placekitten.com/200/200', 
-    //     description: 'A gallery style webpage',
-    //     tag: 'lisacab',
-    //     images:[
-    //         {url: 'http://placekitten.com/300/300', description:'cat1'},
-    //         {url: 'http://placekitten.com/300/300', description:'cat2'}
-    //     ]
-    // }
+    
 ]
 
 function Portfolio() {

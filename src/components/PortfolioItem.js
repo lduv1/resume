@@ -67,16 +67,24 @@ const Item = styled.div`
         display: grid;
         grid-template-columns: 1fr 8fr 1fr;
         grid-template-areas: "prev img next";
+        margin-top: .5rem;
         
         > div{
             grid-area: img;
             height: 100%;
             z-index: -1;
-            img{
+            .galimg{
                 /* height: auto; */
                 border-radius: 2px;
-                width: 100%;
+                max-width: 100%;
+                max-height: 30vh;
+                display:block;
+                margin: 0 auto;
                 box-shadow: 1px 1px 8px var(--color-dark-gray);
+            }
+            .description{
+                padding-top: .5rem;
+                text-align: center;
             }
         }
         button:nth-of-type(1){
@@ -169,7 +177,7 @@ function PortfolioItem(props) {
         <Item open={open}>
             <h2>{props.title}</h2>
             <div className="description">{props.description}</div>
-            <a target="_blank" rel="noopener noreferrer" href={props.link}>{props.link}</a>
+            <a target="_blank" rel="noopener noreferrer" href={props.link}>{props.linktext}</a>
             <img alt="thumbnail" src={props.thumbnail} onClick={toggleOpen}/>
             <button onClick={toggleOpen}>{open ? <FaAngleUp /> : <FaAngleDown />}</button>
             {dropTransitions.map(({ item, props, key }) => 
@@ -180,8 +188,8 @@ function PortfolioItem(props) {
                         {imageTransitions.map(({ item, props, key }) => 
                             images.map(image =>  
                                 <animated.div key={`${k}-${key}`} style={props}>
-                                    <img alt={image.description} src={image.url} />
-                                    <div>{image.description}</div>
+                                    <img className="galimg" alt={image.description} src={image.url} />
+                                    <div className="description">{image.description}</div>
                                 </animated.div>
                                 )[item]
                         )}
