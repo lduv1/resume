@@ -4,6 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 import GitHublogo from '../assets/GitHub-Mark-64px.png'
 import Linkedinlogo from '../assets/LI-In-Bug.png'
+import Logo from '../assets/logo.svg'
 
 
 const Nav = styled.nav`
@@ -19,10 +20,19 @@ const Nav = styled.nav`
         text-decoration: none;
         margin: auto auto auto 4rem;
         grid-area: name;
+        display: flex;
+        align-items: center;
 
+        .logo{
+            display: inline-block;
+            height: 2rem;
+            width: 2rem;
+            margin-right: 1rem;
+        }
         h1{
             margin: 0;
             font-size:2rem;
+            display: inline-block;
         }
     }
 
@@ -78,7 +88,10 @@ function Navbar() {
     
     return (
         <Nav>
-            <Link to='/'><h1>Louis Duvoisin</h1></Link>
+            <Link to='/'>
+                <img className="logo" src={Logo} alt="logo"/>
+                <h1>Louis Duvoisin</h1>
+            </Link>
             <div className="links">
                 <NavLink exact to="/">About</NavLink>
                 <NavLink to="/work">Work</NavLink>

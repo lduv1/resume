@@ -50,10 +50,10 @@ const items = [
         tag: 'lisacab',
         images:[
             {url: Home, description:'Home'},
-            {url: Gallery, description:'Paintings from 2012-2013'},
+            {url: Gallery, description:'Paintings from 2010-2011'},
             {url: Show, description:'A writeup for a gallery show'},
             {url: HomeMobile, description:'Home (mobile)'},
-            {url: GalleryMobile, description:'Paintings from 2012-2013 (mobile)'}
+            {url: GalleryMobile, description:'Paintings from 2010-2011 (mobile)'}
         ]
     },
     {
