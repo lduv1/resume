@@ -111,7 +111,7 @@ function About() {
                 <div className="languages">
                     <h2>Languages I've worked with</h2>
                     <ul >
-                        <li>Javascript (ES6)</li>
+                        <li>Javascript (ES6+)</li>
                         <li>CSS (SASS/LESS)</li>
                         <li>Python</li>
                         <li>C/C++</li>
